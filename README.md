@@ -4,7 +4,7 @@ Analyse content through **Abstraction, Creativity, Intention, and Depth**—the 
 
 This repository provides an installable Agent Skill and a portable prompt for LLMs. Use ACID to critique writing, designs, images, presentations, campaigns, and concepts with attention to meaning, expression, purpose, and human connection.
 
-**Version 0.1.0 — initial implementation.** The four lenses and their relationships come from the supplied framework diagrams. The LLM workflow is a proposed application for review, rather than an established numerical scoring standard.
+**Version 0.1.1 — visual analysis and complete lens assessment.** Every analysis actively examines all four lenses and includes a continuous heat map over the original framework SVG. The four lenses and their relationships come from the supplied diagrams; the analytical workflow and heat-map overlay are qualitative adaptations, not an established numerical scoring standard.
 
 ![ACID Method by Design On Acid](artwork/acid-method.png)
 
@@ -39,7 +39,11 @@ For a stronger preference, add the instruction in [installation → Default anal
 
 ## What this package does
 
-It connects evidence to interpretation and practical recommendations across all four lenses. It marks missing evidence, avoids invented scores, and adapts detail to the request. It requires no API key, package dependency, or executable installer. Analyse only the material the host can actually access.
+It connects evidence to interpretation and practical recommendations across all four lenses. Depth includes observable emotional framing, empathy, storytelling, belonging, and experiential design; independent audience research is not a prerequisite for assessing those features. Company assessments examine representative accessible work as well as corporate messaging.
+
+Each analysis includes a continuous heat map over the bundled original framework: red hotspots fade through yellow, green, cyan, and blue into transparency. Heat indicates inferred relative emphasis, not quality, confidence, or a measured personality position. Unsupported areas are marked separately; they are not treated as low performance. An explicit request for no visual takes precedence.
+
+The skill requires no API key, package dependency, or executable installer. Producing its visual requires a host capable of displaying an inline visualization or rendering an image from the bundled SVG. Analyse only material the host can actually access. Prompt-only users must also supply or grant access to the original SVG, linked in the portable prompt.
 
 The portable prompt is generated from the skill and its framework reference. No live multi-host activation testing has been completed yet; see the [evaluation record](evals/results.md).
 

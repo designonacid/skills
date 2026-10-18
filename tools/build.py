@@ -15,6 +15,17 @@ def portable_prompt():
         "Read [references/framework.md](references/framework.md) when explaining the framework, its provenance, or its symbolic origins.",
         "Use the framework reference included below when explaining provenance or symbolic origins.",
     )
+    body = body.replace(
+        "[ACID Method - Framework.svg](assets/ACID%20Method%20-%20Framework.svg)",
+        "[ACID Method - Framework.svg](https://raw.githubusercontent.com/designonacid/skills/main/skills/acid-method/assets/ACID%20Method%20-%20Framework.svg)",
+    )
+    body = body.replace(
+        "## Required visual: framework heat map\n",
+        "## Required visual: framework heat map\n\n"
+        "For this portable prompt, retrieve the original SVG through the link below or use a user-supplied copy. "
+        "If the original is inaccessible, ask for it; if rendering is unsupported, disclose that limitation. "
+        "Do not recreate the framework, invent a heat map, or claim to have displayed one.\n",
+    )
     return (
         "# ACID Method — portable instructions\n\n"
         "Use these instructions for content analysis in this conversation unless I explicitly request another method. "

@@ -1,6 +1,20 @@
-# Validation record — 0.1.0
+# Validation record
 
 Date: 18 October 2026.
+
+## Version 0.1.1 package checks
+
+- Skill-creator validator passes with the complete four-lens assessment and heat-map requirements.
+- Portable prompt regenerated; `python3 tools/build.py --check` confirms parity.
+- The bundled framework SVG parses and is byte-identical to `artwork/acid-framework.svg`.
+- Built ZIP passes its integrity check and includes the original framework asset, skill, reference, host metadata, and license.
+- All local Markdown file links resolve, including the percent-encoded SVG filename.
+- Git whitespace check passes.
+- Added review cases for the required visual, Depth without audience research, genuine evidence gaps, explicit visual overrides, and portable asset access.
+
+These are package checks, not independent host-behaviour tests. The new evaluation cases still need fresh-session runs before claiming multi-host reliability.
+
+## Version 0.1.0
 
 ## Completed review
 

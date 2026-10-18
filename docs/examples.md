@@ -1,6 +1,6 @@
 # Worked examples
 
-These are illustrative analyses written for this draft, not independent model-test results. They use the ACID Method by Design On Acid.
+These are illustrative text excerpts, not independent model-test results or complete visual outputs. They use the ACID Method by Design On Acid. In live use, the skill also requires a continuous heat-map overlay on the original framework SVG, unless the user explicitly requests text only.
 
 ## Workshop invitation
 

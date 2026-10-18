@@ -28,7 +28,11 @@ The repository's `artwork/` directory contains unchanged copies of the supplied 
 - `acid-origin.png`: originally `ACID Mehtod - Origin.png` (original spelling).
 - `acid-method.png`: originally `ACID Method.png`.
 
-The installable skill contains this text reference so analysis does not depend on image-reading support or files outside the skill folder. The artwork remains in the repository for human reference.
+The installable skill bundles the original framework SVG at `assets/ACID Method - Framework.svg` for the required heat-map visual. The other original artwork remains in the repository for human reference.
+
+## Heat-map adaptation in version 0.1.1
+
+Each use includes a qualitative heat-map overlay on the original framework SVG. The overlay communicates relative emphasis inferred from the supplied evidence and distinguishes unknown areas from low emphasis. It is a presentation adaptation requested by the user, not part of the original diagrams or a validated scoring method. The original artwork remains unchanged beneath the generated overlay.
 
 ## What version 0.1.0 adds
 

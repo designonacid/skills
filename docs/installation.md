@@ -11,7 +11,7 @@ git clone https://github.com/designonacid/skills.git
 cd skills
 ```
 
-All copy commands below run from the repository root. Copy the **entire** `skills/acid-method` folder, including its `references` and `agents` folders. If a destination named `acid-method` already exists, review it before replacing it; the commands below stop instead of overwriting it.
+All copy commands below run from the repository root. Copy the **entire** `skills/acid-method` folder, including its `references`, `agents`, and `assets` folders. The original framework SVG in `assets` is required for heat-map output. If a destination named `acid-method` already exists, review it before replacing it; the commands below stop instead of overwriting it.
 
 ## Codex
 
@@ -57,6 +57,8 @@ Open [prompts/acid-method.md](../prompts/acid-method.md), copy its full contents
 
 This is an instruction-based fallback, not a claim of native skill installation. A link to this repository only helps if the host can retrieve and read it.
 
+For visual output, also upload [the original framework SVG](../skills/acid-method/assets/ACID%20Method%20-%20Framework.svg), or let the host retrieve it through the link in the portable prompt. The host needs inline visualization or image-rendering support. If it cannot access or render the original, it should disclose that limitation instead of substituting a different framework or claiming a visual was produced.
+
 ## Default analysis
 
 After installing the skill, add this to the host's supported persistent instructions if you want ACID used for ordinary content analysis:
@@ -71,7 +73,7 @@ For a host without skills, save the portable prompt alongside this preference in
 
 In a new session, ask: “Analyse this workshop invitation: ‘A free poster workshop for beginners. Saturday, 14:00. Bring one photo. Book a place.’”
 
-Look for A/C/I/D findings grounded in the invitation, recognition that venue and booking details are missing, and no invented audience research or scores. Confirm the host reports the skill as loaded where its interface supports that. Four headings alone do not demonstrate skill activation.
+Look for A/C/I/D findings grounded in the invitation, recognition that venue and booking details are missing, and no invented audience research or scores. The response should include the original framework with a continuous blue-to-red heat-map overlay, a legend, and a dominant-area label. Depth should examine the invitation's welcoming language and personal relevance without requiring audience research. Confirm the host reports the skill as loaded where its interface supports that. Four headings alone do not demonstrate skill activation.
 
 ## Update or remove
 
