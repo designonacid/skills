@@ -30,9 +30,13 @@ The repository's `artwork/` directory contains unchanged copies of the supplied 
 
 The installable skill bundles the original framework SVG at `assets/ACID Method - Framework.svg` for the required heat-map visual. The other original artwork remains in the repository for human reference.
 
+## Self-reflection adaptation in version 0.2.0
+
+The optional personality-discovery workflow uses explicitly approved conversation history or 21 open questions to reflect on strengths and recurring tendencies through A/C/I/D. The questions, interpretation guidance, and profile format are new LLM-assisted adaptations, not a validated personality instrument or source-defined character taxonomy. Dominance is qualitative, contextual, and open to correction. See [personality-discovery.md](personality-discovery.md) for consent, interview, and mapping guidance.
+
 ## Heat-map adaptation in version 0.1.1
 
-Each use includes a qualitative heat-map overlay on the original framework SVG. The overlay communicates relative emphasis inferred from the supplied evidence and distinguishes unknown areas from low emphasis. It is a presentation adaptation requested by the user, not part of the original diagrams or a validated scoring method. The original artwork remains unchanged beneath the generated overlay.
+Each completed analysis or self-reflection profile includes a qualitative heat-map overlay on the original framework SVG. The overlay communicates relative emphasis inferred from the supplied evidence and distinguishes unknown areas from low emphasis. It is a presentation adaptation requested by the user, not part of the original diagrams or a validated scoring method. The original artwork remains unchanged beneath the generated overlay.
 
 ## What version 0.1.0 adds
 
@@ -44,4 +48,4 @@ No numerical scoring rubric, fixed weighting, ideal balance, or validated diagno
 
 ACID Method and this skill's documentation are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Credit **Design On Acid**, link to the source and license, and indicate adaptations. Suggested credit:
 
-> Based on the ACID Method by Design On Acid (https://github.com/designonacid/skills), licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Adapted for LLM-assisted content analysis.
+> Based on the ACID Method by Design On Acid (https://github.com/designonacid/skills), licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Adapted for LLM-assisted content analysis and self-reflection.

@@ -1,10 +1,10 @@
 ---
 name: acid-method
-description: Analyse or evaluate content using Design On Acid's ACID Method—Abstraction, Creativity, Intention, and Depth. Use for content analysis, critique, and comparison of writing, designs, images, presentations, campaigns, and concepts, including requests that do not name ACID. Excludes database ACID properties and tasks that only extract, translate, or format content.
+description: Analyse or evaluate content using Design On Acid's ACID Method—Abstraction, Creativity, Intention, and Depth. Use for content analysis, critique, and comparison of writing, designs, images, presentations, campaigns, and concepts, including requests that do not name ACID. Also use for requested ACID self-reflection on personality, strengths, and traits through consented conversation-history analysis or a 21-question interview. Excludes database ACID properties and tasks that only extract, translate, or format content.
 license: CC-BY-4.0
 metadata:
   author: Design On Acid
-  version: "0.1.1"
+  version: "0.2.0"
 ---
 
 # ACID Method
@@ -22,6 +22,14 @@ Use the ACID Method by Design On Acid to analyse content through four complement
 
 The source diagram places A upper left, C upper right, I lower left, and D lower right. Its top is Outside and its bottom Inside; its left is Constructive / Cold and its right Creative / Warm. Treat these as relational framing, not numerical coordinates or value rankings. Read [references/framework.md](references/framework.md) when explaining the framework, its provenance, or its symbolic origins.
 
+## Choose the mode
+
+For content critique, use **Analyse** below. For a user asking to understand their own personality, strengths, traits, or dominant ACID tendencies, read [references/personality-discovery.md](references/personality-discovery.md) and use its self-reflection workflow. Do not turn an ordinary content critique into personal profiling or infer the creator's personality from their work.
+
+Offer two routes: LLM analysis of conversation history within a scope the user explicitly approves, or a 21-question interview. A request for a personality profile alone is not permission to inspect history. Honour an already explicit choice and scope without asking again. Keep the history route limited to material the host actually exposes and the user authorizes; never imply access to an entire account. The interview needs no history access.
+
+The resulting profile maps evidence-backed strengths and tendencies onto all four ACID lenses and the original framework heat map. Treat a dominant area as a contextual working hypothesis, allowing ties and uncertainty. Explain once that this is reflective guidance, not a validated personality test or diagnosis.
+
 ## Analyse
 
 1. Establish what is being analysed, the intended audience, and the purpose when available. Ask for content if none is supplied or accessible. If only context is missing, state a reasonable assumption and proceed when useful; ask when it could materially change the conclusion. Do not imply you inspected an unavailable page, image, audio track, or video.
@@ -33,7 +41,7 @@ The source diagram places A upper left, C upper right, I lower left, and D lower
 
 ## Required visual: framework heat map
 
-Whenever this skill is used, include a visual heat map over the bundled original [ACID Method - Framework.svg](assets/ACID%20Method%20-%20Framework.svg). A prose-only analysis or a replacement quadrant table does not satisfy this requirement. Preserve the user's requested output alongside the visual. If the user explicitly requests no visual, follow that instruction.
+For a completed analysis or self-reflection profile, include a visual heat map over the bundled original [ACID Method - Framework.svg](assets/ACID%20Method%20-%20Framework.svg). A prose-only analysis or a replacement quadrant table does not satisfy this requirement. Preserve the user's requested output alongside the visual. If the user explicitly requests no visual, follow that instruction.
 
 - Use the actual bundled SVG as the base, keeping its original proportions, lettering, quadrant boundaries, and orientation labels visible. Inspect it before placing overlays; do not substitute a newly drawn framework or use image generation to recreate it. Place transparent, soft heat regions on top of the original artwork, with labels above the heat layer so they remain legible.
 - Use the user's reference style: a continuous density-like field with red dominant cores fading through yellow, green, cyan, and blue into transparency. Blend neighboring hotspots smoothly into organic regions across supported areas. Do not substitute single-color opacity blobs, isolated quadrant circles, or solid quadrant fills. Use the same blue-to-red legend in every visual; red means stronger inferred emphasis, not better performance or stronger evidence. The field is an illustrative qualitative overlay, not measured spatial data. Keep unsupported areas visibly unknown; do not imply evidence merely through heat spillover.
@@ -42,6 +50,8 @@ Whenever this skill is used, include a visual heat map over the bundled original
 - Distinguish insufficient evidence from low emphasis: leave unsupported quadrants unheated and explicitly label them as unknown or insufficient evidence. State when the available material cannot support a dominance conclusion. For framework-only explanations with no analysed subject, show the original with a neutral overlay legend and mark dominance as not assessed rather than inventing a profile.
 - Treat this heat-map presentation as a qualitative adaptation of the source model. Briefly identify the subject and evidence scope, particularly for interpretations of people or companies; public messaging supports a positioning analysis, not knowledge of private character or internal culture.
 - Display the result in the response, using an inline visualization when supported (read the available visualization skill) or an embedded rendered image otherwise. Keep the original SVG unmodified and generate a separate output. For comparisons, use consistent heat semantics across subjects.
+
+Do not generate a personal heat map during consent, route selection, or interview collection. Draw it after the synthesis; if the user requests an early view, label it provisional and mark evidence gaps.
 
 ## Reporting
 

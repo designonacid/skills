@@ -1,6 +1,6 @@
 interface:
   display_name: "ACID Method"
-  short_description: "Analyse content through four complementary lenses"
-  default_prompt: "Use $acid-method to analyse this content and recommend the most useful improvements."
+  short_description: "Analyse content or discover your ACID strengths"
+  default_prompt: "Use $acid-method to analyse content or explore my strengths and tendencies through approved history or 21 questions."
 policy:
   allow_implicit_invocation: true

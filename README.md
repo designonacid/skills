@@ -4,7 +4,7 @@ Analyse content through **Abstraction, Creativity, Intention, and Depth**—the 
 
 This repository provides an installable Agent Skill and a portable prompt for LLMs. Use ACID to critique writing, designs, images, presentations, campaigns, and concepts with attention to meaning, expression, purpose, and human connection.
 
-**Version 0.1.1 — visual analysis and complete lens assessment.** Every analysis actively examines all four lenses and includes a continuous heat map over the original framework SVG. The four lenses and their relationships come from the supplied diagrams; the analytical workflow and heat-map overlay are qualitative adaptations, not an established numerical scoring standard.
+**Version 0.2.0 — personality discovery and strengths.** Explore your own tendencies through conversation history you explicitly approve or a 21-question interview, then receive a practical strengths profile and ACID heat map. This is a self-reflection adaptation, not a validated personality test. Every completed analysis or self-reflection profile actively examines all four lenses and includes a continuous heat map over the original framework SVG. The four lenses and their relationships come from the supplied diagrams; the analytical workflow and heat-map overlay are qualitative adaptations, not an established numerical scoring standard.
 
 ![ACID Method by Design On Acid](artwork/acid-method.png)
 
@@ -31,6 +31,12 @@ Or invoke the skill explicitly:
 
 > Use the ACID Method to compare these two campaign concepts for the same audience.
 
+## Discover your ACID strengths
+
+Ask: “Help me discover my strengths and dominant ACID tendencies.” Choose either LLM analysis of conversation history within a scope you explicitly approve, or a guided 21-question interview. The history route depends on what the host can actually access; you can also supply selected excerpts. The interview asks one question at a time by default, supports skips, and needs no history access.
+
+Your profile covers all four lenses, recurring strengths and traits, contextual tradeoffs, small experiments, and a heat map over the original framework. Multiple areas can dominate; unknown areas remain unknown. You can correct the interpretation. Read the [personality-discovery workflow](skills/acid-method/references/personality-discovery.md) for the questions and mapping guidance.
+
 ## Make ACID your default
 
 The skill description includes ordinary content-analysis requests, so supporting hosts can select it without you naming ACID. Installation alone does **not** guarantee activation on every request. Selection, access to references, and persistent instructions depend on the host.
@@ -45,11 +51,11 @@ Each analysis includes a continuous heat map over the bundled original framework
 
 The skill requires no API key, package dependency, or executable installer. Producing its visual requires a host capable of displaying an inline visualization or rendering an image from the bundled SVG. Analyse only material the host can actually access. Prompt-only users must also supply or grant access to the original SVG, linked in the portable prompt.
 
-The portable prompt is generated from the skill and its framework reference. No live multi-host activation testing has been completed yet; see the [evaluation record](evals/results.md).
+The portable prompt is generated from the skill and its framework and personality-discovery references. No live multi-host activation testing has been completed yet; see the [evaluation record](evals/results.md).
 
 ## Maintain the package
 
-After editing the skill or framework reference, run `python3 tools/build.py` to regenerate the portable prompt and a self-contained `dist/acid-method.zip`. Run `python3 tools/build.py --check` to check prompt parity without writing files. The ZIP is a local build artifact and is excluded from Git; the source folder is installable directly.
+After editing the skill or its references, run `python3 tools/build.py` to regenerate the portable prompt and a self-contained `dist/acid-method.zip`. Run `python3 tools/build.py --check` to check prompt parity without writing files. The ZIP is a local build artifact and is excluded from Git; the source folder is installable directly.
 
 ## License and attribution
 

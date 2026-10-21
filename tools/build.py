@@ -16,6 +16,10 @@ def portable_prompt():
         "Use the framework reference included below when explaining provenance or symbolic origins.",
     )
     body = body.replace(
+        "read [references/personality-discovery.md](references/personality-discovery.md)",
+        "read the personality-discovery reference included below",
+    )
+    body = body.replace(
         "[ACID Method - Framework.svg](assets/ACID%20Method%20-%20Framework.svg)",
         "[ACID Method - Framework.svg](https://raw.githubusercontent.com/designonacid/skills/main/skills/acid-method/assets/ACID%20Method%20-%20Framework.svg)",
     )
@@ -28,10 +32,16 @@ def portable_prompt():
     )
     return (
         "# ACID Method — portable instructions\n\n"
-        "Use these instructions for content analysis in this conversation unless I explicitly request another method. "
+        "Use these instructions for content analysis or requested ACID self-reflection in this conversation unless I explicitly request another method. "
         "This prompt supplies the methodology directly; it does not install a skill or imply access to external files.\n\n"
         + body + "\n\n---\n\n"
-        + (SKILL / "references" / "framework.md").read_text().strip() + "\n"
+        + (SKILL / "references" / "framework.md").read_text().strip().replace(
+            "See [personality-discovery.md](personality-discovery.md)",
+            "See the personality-discovery reference included below",
+        ) + "\n\n---\n\n"
+        + (SKILL / "references" / "personality-discovery.md").read_text().strip().replace(
+            "the heat map required by SKILL.md", "the heat map required by the instructions above"
+        ) + "\n"
     )
 
 
@@ -44,7 +54,7 @@ def main():
     if args.check:
         if not destination.exists() or destination.read_text() != expected:
             raise SystemExit("Portable prompt is stale: run python3 tools/build.py")
-        print("Portable prompt matches skill and framework reference.")
+        print("Portable prompt matches skill and references.")
         return
     destination.parent.mkdir(parents=True, exist_ok=True)
     destination.write_text(expected)
